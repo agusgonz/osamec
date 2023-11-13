@@ -48,11 +48,11 @@ export default function PreNavbar() {
 			<div
 				className={`container mx-auto flex justify-between`}
 			>
-				<ul className=" flex">
+				<ul className=" flex whitespace-nowrap">
 					{itemsInfo.map((itemInfo, itemInfoIndex) => {
 						return (
 							<li
-								key={itemInfo.name}
+								key={itemInfo.text}
 								className={`py-2 px-3 border-r border-gray-300 ${
 									itemInfoIndex == 0 && "border-l flex-grow"
 								}`}

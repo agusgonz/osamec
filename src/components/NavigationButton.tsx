@@ -13,32 +13,33 @@ import {
 } from "@/components/ui/NavigationMenu"
 
 import { FC } from "react"
-import { navItem } from "./Navbar"
+import { item } from "./Navbar"
 
 interface NavigationButtonProps {
-	navItem: navItem
+	item: item
 }
 
 const NavigationButton: FC<NavigationButtonProps> = ({
-	navItem,
+	item,
 }) => {
 	return (
 		<NavigationMenu>
 			<NavigationMenuList>
 				<NavigationMenuItem>
 					<NavigationMenuTrigger className="bg-none">
-						{navItem.text}
+						{item.text}
 					</NavigationMenuTrigger>
 					<NavigationMenuContent className=" min-w-[160px] border border-gray-300 p-4 flex flex-col bg-gray-osa mt-2 gap-2">
-						{navItem.subItems?.map(item => {
+						{item.subItems?.map(item => {
 							return (
 								<Link
+									key={item.text}
 									href={item.href}
 									legacyBehavior
 									passHref
 								>
 									<NavigationMenuLink
-										className={`${navigationMenuTriggerStyle()}  hover:underline`}
+										className={`${navigationMenuTriggerStyle()} text-gray-600  hover:text-gray-900`}
 									>
 										{item.text}
 									</NavigationMenuLink>
