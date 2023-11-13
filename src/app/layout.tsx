@@ -10,7 +10,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="es">
-			<body className={`${rotis_sans_serif.className} `}>
+			<body className={`${rotis_sans_serif.className}`}>
 				<Navbar />
 				{children}
 				{/* <Footer /> */}
