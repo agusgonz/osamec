@@ -9,7 +9,15 @@ import {
 import Link from "next/link"
 import React, { ReactNode } from "react"
 
-const itemsInfo = [
+interface itemInfoType {
+	icon: React.JSX.Element
+	text: string
+	smText?: string
+	href?: string
+	name?: string
+}
+
+const itemsInfo: itemInfoType[] = [
 	{
 		icon: <Clock className="w-4" />,
 		text: "Lun a Vie: 8:30 - 12:30, 13:30 - 17:30",
