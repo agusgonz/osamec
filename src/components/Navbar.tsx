@@ -67,7 +67,7 @@ export default function Navbar() {
 	return (
 		<div className="bg-white">
 			<PreNavbar />
-			<div className="container mx-auto text-lg py-4 px-3 sm:px-0 text-gray-600">
+			<div className="container mx-auto  py-4 px-3 sm:px-0 text-gray-600">
 				{width <= 500 ? (
 					<AccordionButton
 						trigger={
@@ -76,7 +76,7 @@ export default function Navbar() {
 							</div>
 						}
 						body={
-							<ul className="flex flex-col gap-4  mt-4">
+							<ul className="flex flex-col gap-4 text-2xl mt-4 ">
 								{navItems.map((navItem, navItemIndex) => {
 									return (
 										<li
@@ -92,7 +92,7 @@ export default function Navbar() {
 														</div>
 													}
 													body={
-														<ul className="text-base px-3 flex flex-col gap-3 pt-4">
+														<ul className="text-xl px-3 flex flex-col gap-3 pt-4">
 															{navItem.subItems.map(
 																subItem => {
 																	return (
@@ -125,7 +125,7 @@ export default function Navbar() {
 						}
 					/>
 				) : (
-					<ul className="flex gap-4 items-center">
+					<ul className="flex gap-4 items-center text-lg">
 						{navItems.map((navItem, navItemIndex) => {
 							return (
 								<li

@@ -2,6 +2,7 @@ import { FC } from "react"
 import TitleUnderline from "../TitleUnderline"
 import { User, Award, Wrench } from "lucide-react"
 import SubTitleUnderline from "../SubTitleUnderline"
+import Button from "../Button"
 
 interface PorQueNosotrosProps {}
 
@@ -21,7 +22,7 @@ const PorQueNosotros: FC<PorQueNosotrosProps> = ({}) => {
 				<div className="flex flex-col items-center text-center gap-4">
 					<SubTitleUnderline
 						icon={
-							<User className="text-orange-osa w-8 h-8" />
+							<User className="text-blue-osa w-8 h-8" />
 						}
 					>
 						Cada trabajo es personal
@@ -36,7 +37,7 @@ const PorQueNosotros: FC<PorQueNosotrosProps> = ({}) => {
 				<div className="flex flex-col items-center text-center gap-4">
 					<SubTitleUnderline
 						icon={
-							<Award className="text-orange-osa w-8 h-8" />
+							<Award className="text-blue-osa w-8 h-8" />
 						}
 					>
 						Estándares Profesionales
@@ -52,7 +53,7 @@ const PorQueNosotros: FC<PorQueNosotrosProps> = ({}) => {
 				<div className="flex flex-col items-center text-center gap-4">
 					<SubTitleUnderline
 						icon={
-							<Wrench className="text-orange-osa w-8 h-8" />
+							<Wrench className="text-blue-osa w-8 h-8" />
 						}
 					>
 						La Mejor Maquinaria
@@ -65,6 +66,7 @@ const PorQueNosotros: FC<PorQueNosotrosProps> = ({}) => {
 					</p>
 				</div>
 			</div>
+			<Button>Leer mas</Button>
 		</div>
 	)
 }
