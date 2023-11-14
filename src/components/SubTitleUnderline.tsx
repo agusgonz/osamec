@@ -3,11 +3,13 @@ import { FC, ReactNode } from "react"
 
 interface SubTitleUnderlineProps {
 	children: ReactNode
+	isOrange?: boolean
 	icon?: ReactNode
 }
 
 const SubTitleUnderline: FC<SubTitleUnderlineProps> = ({
 	children,
+	isOrange,
 	icon,
 }) => {
 	return (
@@ -18,7 +20,11 @@ const SubTitleUnderline: FC<SubTitleUnderlineProps> = ({
 			>
 				{children}
 			</h2>
-			<div className="w-1/4 mx-auto border-t-2 border-orange-osa"></div>
+			<div
+				className={`w-1/4 mx-auto border-t-2 ${
+					isOrange ? "border-orange-osa" : "border-blue-osa"
+				}`}
+			></div>
 		</div>
 	)
 }
