@@ -67,7 +67,7 @@ export default function Navbar() {
 	return (
 		<div className="bg-white">
 			<PreNavbar />
-			<div className="container mx-auto  py-4 px-3 sm:px-0 text-gray-600">
+			<div className="container mx-auto  py-4 px-6  text-gray-600">
 				{width <= 500 ? (
 					<AccordionButton
 						trigger={

@@ -54,7 +54,7 @@ export default function PreNavbar() {
 	return (
 		<div className="bg-gray-osa text-sm leading-6 text-gray-500">
 			<div
-				className={`container mx-auto flex justify-between`}
+				className={`container mx-auto flex justify-between sm:px-6`}
 			>
 				<ul className=" flex whitespace-nowrap">
 					{itemsInfo.map((itemInfo, itemInfoIndex) => {
@@ -99,7 +99,7 @@ export default function PreNavbar() {
 					})}
 				</ul>
 				<ul className=" flex">
-					{itemsSocial.map(
+					{/* {itemsSocial.map(
 						(itemSocial, itemSocialIndex) => {
 							return (
 								<li
@@ -118,8 +118,8 @@ export default function PreNavbar() {
 								</li>
 							)
 						}
-					)}
-					<li className="py-2 px-3 border-r border-gray-300">
+					)} */}
+					<li className="py-2 px-3 border-x border-gray-300">
 						<Search className="w-4 " />
 					</li>
 				</ul>

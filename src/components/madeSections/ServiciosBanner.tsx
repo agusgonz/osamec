@@ -22,7 +22,7 @@ const ServiciosBanner: FC<ServiciosBannerProps> = ({}) => {
 				/>
 			</div>
 
-			<div className="max-w-[500px] mx-auto flex flex-col items-center gap-6 p-6">
+			<div className="max-w-[500px] mx-auto flex flex-col items-center gap-6 py-12 px-6">
 				<TitleUnderline>Servicios</TitleUnderline>
 				<p className="text-center text-gray-400">
 					We provide top notch maintenance service for all
