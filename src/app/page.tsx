@@ -6,6 +6,7 @@ import PorQueNosotros from "@/components/madeSections/PorQueNosotros"
 import PedirTurnoBanner from "@/components/madeSections/PedirTurnoBanner"
 import ServiciosBanner from "@/components/madeSections/ServiciosBanner"
 import ServiciosMecanicos from "@/components/madeSections/ServiciosMecanicos"
+import ReseñasBanner from "@/components/madeSections/ResenasBanner"
 
 export default function Page() {
 	return (
@@ -30,10 +31,16 @@ export default function Page() {
 				<ServiciosBanner />
 			</div>
 
-			<div className="container mx-auto">
+			<div className="container mx-auto mb-16">
 				<ServiciosMecanicos />
 			</div>
-			<div className="h-[200px]">a</div>
+
+			<div className="mb-16">
+				<ReseñasBanner />
+				<PedirTurnoBanner />
+			</div>
+
+			<div className="w-full h-[200px]"></div>
 		</div>
 	)
 }

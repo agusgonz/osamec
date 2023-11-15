@@ -15,11 +15,11 @@ const SubTitleUnderline: FC<SubTitleUnderlineProps> = ({
 	return (
 		<div className=" flex gap-2 flex-col">
 			{icon && <div className="w-min mx-auto">{icon}</div>}
-			<h2
+			<h3
 				className={`${serpentine_icg.className} text-xl font-light`}
 			>
 				{children}
-			</h2>
+			</h3>
 			<div
 				className={`w-1/4 mx-auto border-t-2 ${
 					isOrange ? "border-orange-osa" : "border-blue-osa"

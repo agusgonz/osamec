@@ -96,6 +96,7 @@ const ServiciosMecanicos: FC<
 				{items.map((item, itemIndex) => {
 					return (
 						<Card
+							key={item.text}
 							src={item.image}
 							alt={item.text}
 							text={item.text}
