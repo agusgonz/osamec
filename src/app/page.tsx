@@ -5,6 +5,7 @@ import Image from "next/image"
 import PorQueNosotros from "@/components/madeSections/PorQueNosotros"
 import PedirTurnoBanner from "@/components/madeSections/PedirTurnoBanner"
 import ServiciosBanner from "@/components/madeSections/ServiciosBanner"
+import ServiciosMecanicos from "@/components/madeSections/ServiciosMecanicos"
 
 export default function Page() {
 	return (
@@ -27,6 +28,10 @@ export default function Page() {
 
 			<div className="mb-16">
 				<ServiciosBanner />
+			</div>
+
+			<div className="container mx-auto">
+				<ServiciosMecanicos />
 			</div>
 			<div className="h-[200px]">a</div>
 		</div>

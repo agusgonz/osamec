@@ -14,6 +14,7 @@ const ServiciosBanner: FC<ServiciosBannerProps> = ({}) => {
 				<Image
 					src={image1}
 					fill
+					sizes="50vw"
 					placeholder="blur"
 					className="object-cover"
 					alt={
