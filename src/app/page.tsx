@@ -7,6 +7,8 @@ import PedirTurnoBanner from "@/components/madeSections/PedirTurnoBanner"
 import ServiciosBanner from "@/components/madeSections/ServiciosBanner"
 import ServiciosMecanicos from "@/components/madeSections/ServiciosMecanicos"
 import ReseñasBanner from "@/components/madeSections/ResenasBanner"
+import NuestraMision from "@/components/madeSections/NuestraMision"
+import PreguntasFrecuentes from "@/components/madeSections/PreguntasFrecuentes"
 
 export default function Page() {
 	return (
@@ -38,6 +40,11 @@ export default function Page() {
 			<div className="mb-16">
 				<ReseñasBanner />
 				<PedirTurnoBanner />
+			</div>
+
+			<div className="container mx-auto grid sm:grid-cols-2 px-6 gap-6">
+				<NuestraMision />
+				<PreguntasFrecuentes />
 			</div>
 
 			<div className="w-full h-[200px]"></div>
