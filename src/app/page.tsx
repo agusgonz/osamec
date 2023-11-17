@@ -42,12 +42,10 @@ export default function Page() {
 				<PedirTurnoBanner />
 			</div>
 
-			<div className="container mx-auto grid sm:grid-cols-2 px-6 gap-6">
+			<div className="container mx-auto grid sm:grid-cols-2 px-6 gap-6 mb-16">
 				<NuestraMision />
 				<PreguntasFrecuentes />
 			</div>
-
-			<div className="w-full h-[200px]"></div>
 		</div>
 	)
 }

@@ -9,11 +9,14 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang="es">
-			<body className={`${rotis_sans_serif.className}`}>
+		<html
+			lang="es"
+			className="scroll-smooth"
+		>
+			<body className={`${rotis_sans_serif.className} `}>
 				<Navbar />
 				{children}
-				{/* <Footer /> */}
+				<Footer />
 			</body>
 		</html>
 	)
