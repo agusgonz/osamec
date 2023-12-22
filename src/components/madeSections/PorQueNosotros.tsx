@@ -12,9 +12,7 @@ const PorQueNosotros: FC<PorQueNosotrosProps> = ({}) => {
 			<div className=" max-w-[500px] flex justify-center items-center flex-col gap-6">
 				<TitleUnderline>¿Por qué nosotros?</TitleUnderline>
 				<p className="text-center text-gray-400">
-					We are one of the leading auto repair shops
-					serving customers in Tucson. All mechanic services
-					are performed by highly qualified mechanics.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus minima maxime cumque animi, magni culpa praesentium dicta voluptatem commodi tenetur cupiditate iste numquam.
 				</p>
 			</div>
 			<div className="max-w-[500px] md:max-w-none flex flex-col gap-8 md:grid grid-cols-3 ">
